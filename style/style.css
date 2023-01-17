@@ -104,6 +104,49 @@ header{
     border-bottom: 1px solid #Dadada;
     padding-bottom: 10px;
 }
+
+.plan-boxes{
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.plan .section-description{
+    padding: 0 374px;
+}
+.plans{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:24px ;
+}
+.plan{
+    padding: 63.5px 22px 54px 23px;
+    border-radius: 5px;
+}
+.plan .plan-icon img{
+    width: 58px;
+    height: 49px;
+}
+.plan .plan-box-title{
+    font-weight: 600;
+    font-size: 24px;
+    color: #121212;
+    padding-top: 30px;
+}
+.plan .plan-box-desc{
+    font-weight: 400;
+    font-size: 16px;
+    color: #707070;
+    padding-top: 16px;
+}
+.plan-one{
+    background: rgba(79, 157, 166, 0.1);
+}
+.plan-two{
+    background: rgba(255, 89, 89, 0.1);
+}
+.plan-three{
+    background: #FFF4D6;
+}
 /*  */
 @media only screen and (max-width: 576px) {
     .banner-info{
@@ -140,5 +183,15 @@ header{
     .section-title h2,
     .section-description p{
         padding: 0 10px;
+    }
+    .plan .section-description{
+        padding: 0;
+    }
+    .plans{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 16px;
+    }
+    .plan-boxes{
+        width: 100%;
     }
 }
