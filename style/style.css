@@ -7,7 +7,7 @@
 /* heading style */
 .section-title{
     font-weight: 700;
-    font-size: 45px;
+    font-size: 33px;
     color: #121212;
     padding-bottom: 20px;
 }
@@ -147,6 +147,33 @@ header{
 .plan-three{
     background: #FFF4D6;
 }
+.fourth-section{
+    margin-top: 76px;
+}
+.fourth-section .img-desc-box{
+    width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 83px;
+    grid-row-gap: 100px;
+}
+.fourth-section .img img{
+    width: 456px;
+    height: 477px;
+}
+.fourth-section .information{
+    display: grid;
+    align-content: center;
+
+}
+/* .fourth-section .img:nth-child(3){
+    grid-row-start: 4;
+}  */
+.fourth-section .information .section-title h2,
+.fourth-section .information .section-description p{
+    text-align: left;
+}
 /*  */
 @media only screen and (max-width: 576px) {
     .banner-info{
@@ -154,8 +181,12 @@ header{
         padding: 0;
         padding-top: 150px;
     }
+    h2{
+        font-size: ;
+    }
     .banner-title .title,
-    .banner-description .desc{
+    .banner-description .desc,
+    .fourth-section{
         padding: 10px 15px;
     }
     .banner-title .title{
@@ -194,4 +225,26 @@ header{
     .plan-boxes{
         width: 100%;
     }
+    .fourth-section{
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    .fourth-section .img-desc-box{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        row-gap: 25px;
+    }
+    
+    .fourth-section .img img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .fourth-section .button{
+        margin-bottom: 16px;
+    }
+    .fourth-section .img:nth-child(2){
+        grid-row-start: 1;
+    }
+    
 }
