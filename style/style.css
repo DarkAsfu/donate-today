@@ -204,6 +204,9 @@ header{
 input:focus{
     outline: none;
 }
+::placeholder{
+    padding-left: 10px;
+}
 .subscribe .btn{
     background-color: #FF5959;
     color: #fff;
